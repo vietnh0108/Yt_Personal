@@ -1,0 +1,64 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(253, 209, 247),
+    rgb(255, 255, 125)
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -55%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.form .user-box {
+  position: relative;
+}
+
+.form .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #929292;
+  outline: none;
+  background: transparent;
+}
+.form .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #757575;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form .user-box input:focus ~ label,
+.form .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #a77313;
+  font-size: 12px;
+}
+
+.change-registration {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.change-registration a {
+  text-decoration: none;
+}
